@@ -4,14 +4,14 @@
     "C:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Tests\\PaymentContext.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj": {
+    "c:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
+        "projectUniqueName": "c:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
         "projectName": "PaymentContext.Domain",
-        "projectPath": "C:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
+        "projectPath": "c:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
         "packagesPath": "C:\\Users\\rafar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\obj\\",
+        "outputPath": "c:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rafar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "flunt": {
+              "target": "Package",
+              "version": "[2.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -98,6 +104,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "flunt": {
+              "target": "Package",
+              "version": "[2.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -142,8 +154,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj": {
-                "projectPath": "C:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj"
+              "c:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj": {
+                "projectPath": "c:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj"
               },
               "c:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj": {
                 "projectPath": "c:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj"
