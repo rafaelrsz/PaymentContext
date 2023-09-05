@@ -1,3 +1,5 @@
+using FluentValidator.Validation;
+using FluentValidator;
 using PaymentContext.Shared.ValueObjects;
 
 namespace PaymentContext.Domain.ValueObjects
@@ -13,6 +15,11 @@ namespace PaymentContext.Domain.ValueObjects
             State = state;
             Country = country;
             ZipCode = zipCode;
+
+            AddNotifications(new ValidationContract()
+          .Requires()
+          .IsEmail(state, "Email", "O E-mail é inválido")
+      );
         }
 
         public string Street { get; private set; }
