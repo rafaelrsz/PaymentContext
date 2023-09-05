@@ -2,6 +2,26 @@ namespace PaymentContext.Domain.Entities
 {
     public abstract class Payment
     {
+        protected Payment(DateTime paidDate,
+                          DateTime expireDate,
+                          decimal total,
+                          decimal totalPaid,
+                          string owner,
+                          string document,
+                          string address,
+                          string email)
+        {
+            Number = Guid.NewGuid().ToString().Replace("-", "")[..10].ToUpper();
+            PaidDate = paidDate;
+            ExpireDate = expireDate;
+            Total = total;
+            TotalPaid = totalPaid;
+            Owner = owner;
+            Document = document;
+            Address = address;
+            Email = email;
+        }
+
         public string Number { get; private set; }
         public DateTime PaidDate { get; private set; }
         public DateTime ExpireDate { get; private set; }
@@ -11,23 +31,5 @@ namespace PaymentContext.Domain.Entities
         public string Document { get; private set; }
         public string Address { get; private set; }
         public string Email { get; private set; }
-    }
-
-    public class BoletoPayment : Payment
-    {
-        public string BarCode { get; private set; }
-        public string BoletoNumber { get; private set; }
-    }
-
-    public class CreditCardPayment : Payment
-    {
-        public string CardHolderName { get; private set; }
-        public string CardNumber { get; private set; }
-        public string LastTransactionNumber { get; private set; }
-    }
-
-    public class PaypalPayment : Payment
-    {
-        public string TransactionCode { get; private set; }
     }
 }
