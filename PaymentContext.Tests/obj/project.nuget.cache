@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T0JyufBnzsXipFcSCd3uPOSYDKsz6ekM9hk6oh8X7BMmbGsU9YKC6zyk46dNW8OgZpxWNfKWe5dH0qQHcVuFBQ==",
+  "dgSpecHash": "U28m0xpQlGv3TfTXtcopAIZhFTnrnUsqga+5W6VLn7z69vb5qT48YvXeZQAGvwj7wdVnUCgGY1OZxJjrAORSvQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Tests\\PaymentContext.Tests.csproj",
+  "projectFilePath": "C:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Tests\\PaymentContext.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rafar\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\rafar\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",

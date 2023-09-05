@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj": {}
+    "C:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj": {}
   },
   "projects": {
-    "c:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj": {
+    "C:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
         "projectName": "PaymentContext.Domain",
-        "projectPath": "c:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
+        "projectPath": "C:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
         "packagesPath": "C:\\Users\\rafar\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\obj\\",
+        "outputPath": "C:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rafar\\AppData\\Roaming\\NuGet\\NuGet.Config",

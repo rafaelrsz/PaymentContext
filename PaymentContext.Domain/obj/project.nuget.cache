@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QosCwcAmmgRIs8KyNghLJA74xN07RvbNEO9KVPdUYqijDr43D9B95CcvmWqjakxtwT6tA+/ckbCFMY3+yh7IRw==",
+  "dgSpecHash": "FXqeMsbKDrmCw9fl1a/4ytZm8Ikw4K+PTtjcOiKw9DhthnqeN8RBQl56yS/+o+Ne6y77u0QgHHcs1EfOAP4E+g==",
   "success": true,
-  "projectFilePath": "c:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
+  "projectFilePath": "C:\\Users\\rafar\\Documents\\RAFAEL\\estudos\\Modelando Dominios Ricos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
