@@ -3,33 +3,33 @@ using PaymentContext.Shared.Entities;
 
 namespace PaymentContext.Domain.Entities
 {
-    public class Student : Entity
+  public class Student : Entity
+  {
+    private IList<Subscription> _subscriptions;
+    public Student(Name name, Document document, Email email, Address address)
     {
-        private IList<Subscription> _subscriptions;
-        public Student(Name name, Document document, Email email, Address address)
-        {
-            Name = name;
-            Document = document;
-            Email = email;
-            Address = address;
-            _subscriptions = new List<Subscription>();
+      Name = name;
+      Document = document;
+      Email = email;
+      Address = address;
+      _subscriptions = new List<Subscription>();
 
-            AddNotifications(name, document, email, address);
-        }
-
-        public Name Name { get; private set; }
-        public Document Document { get; private set; }
-        public Email Email { get; private set; }
-        public Address Address { get; private set; }
-        public IReadOnlyCollection<Subscription> Subscriptions { get { return _subscriptions.ToArray(); } }
-
-        public void AddSubscription(Subscription subscription)
-        {
-            foreach (var sub in Subscriptions.Where(p => p.Active))
-                sub.Inactivate();
-
-            _subscriptions.Add(subscription);
-        }
+      AddNotifications(name, document, email, address);
     }
+
+    public Name Name { get; private set; }
+    public Document Document { get; private set; }
+    public Email Email { get; private set; }
+    public Address Address { get; private set; }
+    public IReadOnlyCollection<Subscription> Subscriptions { get { return _subscriptions.ToArray(); } }
+
+    public void AddSubscription(Subscription subscription)
+    {
+      foreach (var sub in Subscriptions.Where(p => p.Active))
+        sub.Inactivate();
+
+      _subscriptions.Add(subscription);
+    }
+  }
 }
 
