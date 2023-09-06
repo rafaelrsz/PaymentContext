@@ -17,9 +17,9 @@ namespace PaymentContext.Domain.ValueObjects
       ZipCode = zipCode;
 
       AddNotifications(new ValidationContract()
-    .Requires()
-    .IsEmail(state, "Email", "O E-mail é inválido")
-);
+        .Requires()
+        .HasMinLen(Street, 3, "Address.Street", "A rua deve conter pelo menos 3 caracteres")
+      );
     }
 
     public string Street { get; private set; }

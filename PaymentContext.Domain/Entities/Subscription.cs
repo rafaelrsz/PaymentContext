@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using FluentValidator.Validation;
 using PaymentContext.Shared.Entities;
 
 namespace PaymentContext.Domain.Entities
@@ -23,17 +24,24 @@ namespace PaymentContext.Domain.Entities
 
     public void AddPayment(Payment payment)
     {
+      AddNotifications(new ValidationContract()
+        .Requires()
+        .IsGreaterThan(DateTime.Now, payment.PaidDate, "Subscription.Payments", "Paid date should be on future!")
+      );
+
       _payments.Add(payment);
     }
 
     public void Activate()
     {
       Active = true;
+      LastUpdateDate = DateTime.Now;
     }
 
     public void Inactivate()
     {
       Active = false;
+      LastUpdateDate = DateTime.Now;
     }
   }
 }

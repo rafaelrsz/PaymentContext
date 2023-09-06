@@ -10,8 +10,8 @@ namespace PaymentContext.Domain.ValueObjects
       Address = address;
 
       AddNotifications(new ValidationContract()
-          .Requires()
-          .IsEmail(Address, "Email.Address", "Invalid email address!"));
+        .Requires()
+        .IsEmail(Address, "Email.Address", "Invalid email address!"));
     }
 
     public string Address { get; private set; }

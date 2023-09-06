@@ -1,3 +1,4 @@
+using FluentValidator.Validation;
 using PaymentContext.Domain.ValueObjects;
 using PaymentContext.Shared.Entities;
 
@@ -23,6 +24,13 @@ namespace PaymentContext.Domain.Entities
       Document = document;
       Address = address;
       Email = email;
+
+
+      AddNotifications(new ValidationContract()
+        .Requires()
+        .IsGreaterThan(0, Total, "Payment.total", "Total must be greater than 0!")
+        .IsGreaterOrEqualsThan(Total, TotalPaid, "Payment.TotalPaid", "TotalPaid is less than Total!")
+      );
     }
 
     public string Number { get; private set; }

@@ -1,3 +1,4 @@
+using FluentValidator.Validation;
 using PaymentContext.Domain.ValueObjects;
 using PaymentContext.Shared.Entities;
 
@@ -25,10 +26,12 @@ namespace PaymentContext.Domain.Entities
 
     public void AddSubscription(Subscription subscription)
     {
-      foreach (var sub in Subscriptions.Where(p => p.Active))
-        sub.Inactivate();
+      var hasSubscriptionActive = _subscriptions.Any(p => p.Active);
 
-      _subscriptions.Add(subscription);
+      AddNotifications(new ValidationContract()
+        .Requires()
+        .IsFalse(hasSubscriptionActive, "Student.Subscriptions", "You alredy has an active subscription!")
+      );
     }
   }
 }
